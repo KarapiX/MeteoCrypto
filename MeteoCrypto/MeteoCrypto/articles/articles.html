@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Météo de la crypto</title>
+  <link href="articles.css" rel="stylesheet" type="text/css"/>
+  <script src="articles.js"></script>
+</head>
+<body onload="dessiner(), apparait()" onscroll="haut(), apparait()">
+
+  <nav id="nav">
+          <img src="../images/Menu.png" alt="Menu" id="imgmenu"  onclick="onav();">
+          <a href="../accueil/accueil.html" id="title">Météo de la crypto</a>
+          <div id="fond"></div>
+          <div id="nav-content">
+            <a href="../articles/articles.html" class="navlink">Articles</a>
+            <a href="../formation/formation.html" class="navlink">Formation</a>
+            <a href="../cours/cours.html" class="navlink">Cours des monnaies</a>
+            <a href="../acheter/acheter.html" class="navlink">Acheter</a>
+          </div>
+          <div id="navResp">
+            <img src="../images/close.png" alt="Fermer le menu" id="Cmenu" onclick="Cnav();">
+            <a href="../articles/articles" class="navlinkR">Articles</a>
+            <a href="../formation/formation.html" class="navlinkR">Formation</a>
+            <a href="../cours/cours.html" class="navlinkR">Cours des monnaies</a>
+            <a href="../acheter/acheter.html" class="navlinkR">Acheter</a>
+          </div>
+  </nav>
+        <div id="articles">
+            <div class="box invisible" id="bitcoin">
+                <div class="one" >  Le Bitcoin (₿, BTC, XBT) (de l'anglais bit : unité d'information binaire et coin « pièce de monnaie ») est une cryptomonnaie autrement appelée monnaie cryptographique. Dans le cas de la dénomination unitaire, on l'écrit « bitcoin » et, dans le cas du système de paiement pair-à-pair on l'écrit « Bitcoin ». L'idée fut présentée pour la première fois en novembre 2008 par une personne, ou un groupe de personnes, sous le pseudonyme de Satoshi Nakamoto. Le code source de l'implémentation de référence fut quant à lui publié en 2009. L'objectif est de créer un système décentralisé et pair-à-pair afin d'échanger de la valeur monétaire en s'affranchissant de tout organisme tiers, tel que les institutions financières.
+
+                    Le G20 considère que le Bitcoin est un « crypto-actif ». Ce terme « crypto-actif » fait alors référence à « des actifs virtuels stockés sur un support électronique permettant à une communauté d'utilisateurs les acceptant en paiement de réaliser des transactions sans avoir à recourir à la monnaie légale ».
+                    Pour créer et gérer les bitcoins, Bitcoin s'appuie sur un logiciel. Dans ce logiciel, les bitcoins sont créés conformément à un protocole qui rétribue les agents (appelés « mineurs ») qui ont traité des transactions. Ces agents mettent à contribution leur puissance de calcul informatique afin de vérifier, de sécuriser et d'inscrire les transactions dans un registre virtuel, appelé la blockchain, en français chaîne de blocs, nom qui vient du fait que l'entité de base de Bitcoin s'appelle un bloc, et que les blocs sont ensuite reliés en une chaîne, la chaine de blocs.
+
+                    Pour chaque nouveau bloc accepté, l'activité de vérification-sécurisation-enregistrement, appelée minage, est rémunérée par des bitcoins nouvellement créés et par les frais des transactions traitées. En tant que monnaie ou commodité, les bitcoins peuvent être échangés contre d'autres monnaies ou commodités, biens ou services. Le taux d'échange de la cryptomonnaie est fixé sur des places de marché spécialisées et fluctue selon la loi de l'offre et de la demande.
+
+                  </div>
+                <div class="two"><img src="../images/Bitcoin.svg.png"></div>
+              </div><br>
+
+              <div class="box invisible" id="Ethereum">
+
+                <div class="two"> <img src="../images/Ethereum_logo_translucent.svg"></div>
+                <div class="one" >Ethereum (prononcé ɪˈθɪrɪəm/ ) est un protocole d'échanges décentralisés permettant la création par les utilisateurs de contrats intelligents. Ces contrats intelligents sont basés sur un protocole informatique permettant de vérifier ou de mettre en application un contrat mutuel. Ils sont déployés et consultables publiquement dans une blockchain.
+
+                  Ethereum utilise une unité de compte dénommée Ether comme moyen de paiement de ces contrats. Son sigle correspondant, utilisé par les plateformes d'échanges, est « ETH ». Ethereum est la deuxième plus importante monnaie cryptographique décentralisée avec une capitalisation supérieure à 448 milliards d'euros en octobre 2021.
+
+                  En juillet 2016, l'équipe de développement d'Ethereum a dû procéder à un hard fork après une attaque réussie par un groupe de pirates sur un fonds d'investissement en Ether appelé The DAO (en) (organisation autonome décentralisée) dans laquelle près de 3 641 694 ETH (soit plus de 5 % du montant total de la crypto-monnaie en circulation) ont été détournés sur une adresse non contrôlée par les membres de The DAO. Ce hard fork a permis d'annuler le détournement et de restituer ses fonds à l'organisation autonome décentralisée. Néanmoins, ce changement n'a pas recueilli un consensus absolu et une faible partie de la communauté n'a pas implémenté ce changement qui a conduit à la formation de deux chaînes de blocs séparées : l'une officielle avec pour unité monétaire l'Ether (symbole : ETH) et son spin-off avec pour unité monétaire l'Ether classique (en) (symbole : ETC). </div>
+              </div><br>
+
+              <div class="box invisible"id="Tether">
+                <div class="one" > Tether (abrégé USDT) est une crypto-monnaie, de type stablecoin, émise par la société Tether Limited. Historiquement, la société affirmait que chaque coin était adossée à un dollar américain, mais depuis le 14 mars 2019, elle a modifié son adossement pour inclure les prêts aux entreprises affiliées. En avril 2019, le procureur général de l'État de New York accuse la plateforme d'échange Bitfinex d'utiliser les Tether pour masquer l'absence de 850 millions de dollars depuis la mi-2018. C'est pour ces différents points que le Tether est controversé.
+
+                  Tether est perçu comme un stablecoin parce qu'il avait été conçu à l'origine pour toujours valoir 1,00 $, en conservant 1,00 $ de réserves pour chaque Tether émis8. Néanmoins, Tether Limited déclare que les détenteurs de Tether n'ont aucun droit contractuel, aucun autre recours juridique, ni aucune garantie que les Tether seront échangés5. Le 30 avril 2019, l'avocat de Tether Limited a affirmé que chaque tether n'était protégée qu'à hauteur de 0,74 $.
+
+                  Tether Limited et la crypto-monnaie Tether sont controversés en raison de l'incapacité de la société à fournir un audit montrant des réserves suffisantes, en raison de son rôle présumé dans la manipulation du prix du bitcoin13, en raison de sa relation floue avec la plateforme Bitfinex, et en raison l'absence apparente de relations bancaires à long terme14. David Gerard écrit dans le Wall Street Journal, que le Tether est en quelque sorte la banque centrale du crypto trading, pourtant ils ne se conduisent pas comme une institution financière responsable et sensée. Le prix de Tether, à cause de la perte de confiance des investisseurs dans le coin a baissé le 15 octobre 2018 à 0,90 $, son niveau le plus bas. Le 20 novembre 2018, Bloomberg signalait que des procureurs fédéraux américains enquêtaient sur l'utilisation du Tether pour manipuler le prix du Bitcoin15. En 2019, Tether a dépassé Bitcoin en termes de volume de transactions avec un volume de transactions quotidien et mensuel supérieur à toute autre crypto-monnaie. </div>
+                <div class="two"><img src="../images/825.png"></div>
+              </div><br>
+
+              <div class="box invisible" id="Hex">
+                <div class="two"> <img src="../images/5015.png"></div>
+                <div class="one" > Hex est le premier compte d'épargne à taux d'intérêt élevé construit sur la blockchain à l'aide de jetons ERC-20. Hex fonctionne comme un certificat de dépôt sur la blockchain et fonctionne d'une manière basée sur l'intérêt sans confiance. Cela signifie que les utilisateurs peuvent avoir confiance dans le système sans s'inquiéter des mauvais acteurs. Avec Hex, vous avez l'assurance que le jeton que vous détenez est construit au-dessus d'un cadre sécurisé testé, ce qui minimise les vecteurs d'attaque disponibles. La plateforme est plus sûre et protège contre les menaces malveillantes courantes qui sévissent dans d'autres crypto-monnaies.
+
+                  Hex a mis au point un mode de paiement unique qui consiste à rémunérer les détenteurs de la crypto-monnaie plutôt que les mineurs. Ce système permet de récompenser ceux qui conservent leurs actifs Hex sur le long terme. Au lieu de conserver Hex dans un portefeuille pendant qu'il se déprécie en raison de l'inflation, Hex offre un nouveau moyen de gagner de l'argent en "jalonnant" vos jetons. Le jalonnement est une forme de verrouillage de vos jetons pour une durée prédéterminée, plus longtemps vous les verrouillez, plus vous gagnez. Cela a pour avantage de retirer temporairement les jetons de la circulation et d'en augmenter le prix. Les faibles taux d'inflation sont utilisés pour augmenter les profits des détenteurs de Hex par rapport à ceux qui les détiennent.
+
+                  L'objectif de Hex est de remplacer l'or, les sociétés de cartes de crédit, les sociétés de paiement, les anciens certificats de dépôt et les intermédiaires. La valeur combinée des entités qu'Hex tente de remplacer dépasse les 20000 milliards de dollars. Si l'on considère que le Bitcoin n'a actuellement qu'une capitalisation boursière de 160 milliards de dollars en tant que plus grande crypto-monnaie, il y a encore beaucoup de chemin à parcourir. La communauté Hex est d'accord pour dire que ce jeton a le potentiel de déraciner et de dépasser toutes les crypto-monnaies existantes.
+
+
+
+                  </div>
+              </div><br>
+
+              <div class="box invisible"id="USD">
+                <div class="one" >  USD Coin (USDC) est un stablecoin numérique qui est arrimé au dollar américain. L'USD Coin est géré par un consortium appelé Centre, fondé par Circle et comprenant des membres de la bourse de crypto-monnaies Coinbase et de la société minière Bitcoin Bitmain, un investisseur de Circle. L'USDC est émis par une entité privée et ne doit pas être confondu avec une monnaie numérique de banque centrale (CBDC).
+
+                  Circle affirme que chaque USDC est soutenu par un dollar détenu en réserve, ou par d'autres "investissements approuvés", bien que ceux-ci ne soient pas détaillés. La formulation sur le site Web de Circle est passée de l'ancien "adossé à des dollars américains" à "adossé à des actifs entièrement réservés" d'ici juin 2021.
+
+                  La tokenisation du dollar américain en USD Coin se fait en trois étapes :
+
+                      Un utilisateur envoie des dollars US sur le compte bancaire de l'émetteur de la pièce.
+                      L'émetteur utilise un contrat intelligent USD Coin pour créer la quantité équivalente de USD Coin.
+                      Les pièces de monnaie USD nouvellement frappées sont envoyées à l'utilisateur et les dollars US substitués sont conservés dans une réserve.
+
+                  Le rachat des USD Coins contre des US Dollars suit le processus décrit ci-dessus mais en sens inverse.
+
+                  Les réserves de l'USDC sont régulièrement attestées (mais pas auditées) par Grant Thornton, LLP, et les attestations mensuelles peuvent être consultées sur le site Web du Consortium du Centre.
+                  </div>
+                <div class="two"><img src="../images/3408.png"></div>
+              </div><br>
+
+              <div class="box invisible" id="BNB">
+                <div class="two"> <img src="../images/1839.png"></div>
+                <div class="one">Le site a été lancé le 14 juillet 2017 et est basé à Hong Kong. Le PDG en est Changpeng Zhao (en) (dit « CZ »), lequel deviendra milliardaire en quelques mois et fera la couverture du magazine financier américain Forbes en février 2018.
+
+                  Depuis le début 2018, Binance est considérée comme la plus grande plateforme d'échange de cryptomonnaies dans le monde en termes de volume.
+
+                  Le jeudi 2 avril 2020, Binance annonce officiellement le rachat du fournisseur de données de marchés des cryptomonnaies CoinMarketCap (570e site le plus visité au monde) pour un montant qui ne sera pas rendu public. L'entreprise annonce, le même mois, son intention de lancer son propre marché de Jeton non fongible sur lequel les utilisateurs peuvent créer, acheter et vendre des objets de collection numériques.
+
+                  Binance n'est pas officiellement réglementé par les institutions globales. On ne sait pas exactement où le siège de cette compagnie est situé. En mars 2018 l'agence Bloomberg a indiqué que le siège de Binance serait installé à Malte. Le 21 février 2020 la Direction des services financiers de Malte (Malta Financial Services Authority - MFSA) a publié un communiqué stipulant que Binance « n'étant pas autorisé par la MFSA à opérer dans la sphère des cryptomonnaies, ne fait par conséquent pas l'objet de la surveillance [et protection] normative de la MFSA ».
+
+                  Le 28 octobre 2020, Forbes a divulgué des documents confidentiels affirmant que Binance et Changpeng Zhao auraient créé une structure corporative complexe dans le but de tromper intentionnellement les autorités de régulation américaines et de tirer profit des investisseurs en cryptomonnaie domiciliés aux État-Unis.
+
+                  Le 20 avril 2021, Brian Brooks, intérimaire du chef de L'OCC auprès de l'administration de Donald Trump, est devenu le nouveau directeur exécutif de Binance.US.
+
+                  En avril 2021 Binance est la plus grande bourse des cryptomonnaies dans le monde par le volume des ventes.
+
+                  En juin 2021, la Financial Conduct Authority ordonne à Binance la cessation de toute activité au Royaume-Uni. Les utilisateurs basés au Royaume-Uni peuvent cependant toujours acheter et vendre des crypto-monnaies sur Binance.com.
+
+                  Le 21 avril 2022, à la suite des sanctions imposées par l'Union européenne contre la Russie pendant l'invasion de l'Ukraine, Binance limite sa plateforme en Russie. Les adresses Russes voient leurs portefeuilles capés à l'équivalent de 10 000 euros.
+
+                  Le 4 mai 2022, l'Autorité des marchés financiers (AMF - régulateur français) enregistre Binance en tant que Prestataire de Services sur Actifs Numériques (PSAN). </div>
+              </div><br>
+
+              <div class="box invisible" id="Cardano">
+                <div class="one"> Cardano est une blockchain open source, ainsi qu'une plateforme permettant d’exécuter des contrats intelligents. La cryptomonnaie interne de Cardano s'appelle Ada. Ce projet est dirigé par Charles Hoskinson, co-créateur d'Ethereum. Le développement du projet est supervisé par la Fondation Cardano basée à Zoug, en Suisse. Cardano est considéré par certains comme la synthèse de Bitcoin et d'Ethereum, et vise en plus à être neutre en carbone. Elle est la troisième cryptomonnaie au niveau de sa capitalisation, en date du 13 août 2021, après Bitcoin, et Ethereum.
+                  La plate-forme a commencé son développement en 2015 et a été lancée en 2017 par Charles Hoskinson, cofondateur d'Ethereum et de BitShares. Selon Hoskinson, il avait quitté Ethereum après une dispute au sujet de garder Ethereum à but non lucratif. Après son départ, il a cofondé IOHK, une société d'ingénierie blockchain, dont l'activité principale est le développement de Cardano, aux côtés de la Fondation Cardano et d'Emurgo. La plateforme est nommée d'après Girolamo Cardano et la cryptomonnaie d'après Ada Lovelace.
+
+                  La devise a fait ses débuts avec une capitalisation boursière de 600 millions de dollars. À la fin de 2017, il avait une capitalisation boursière de 10 milliards de dollars et a brièvement atteint une valeur de 33 milliards de dollars en 2018 avant qu'un resserrement général du marché de la cryptographie ne ramène sa valeur à 10 milliards de dollars. Au milieu de 2021 sa capitalisation s’est élevé à 39,8 milliards de dollars En 2021 Cardano fait partie des dix plus grandes blockchain sur la capitalisation dans le monde. Cardano prétend surmonter les problèmes existants sur le marché de la cryptographie : principalement que Bitcoin est trop lent et rigide, et qu'Ethereum n'est pas sûr ni évolutif. Il est considéré comme une blockchain de troisième génération par ses créateurs.
+
+                  Cardano est développé et conçu par une équipe d'universitaires et d'ingénieurs.
+
+                  L'utilisation des Smart-contracts sur le mainnet de Cardano est possible depuis le 12 septembre 2021.
+                </div>
+                <div class="two"><img src="../images/2010.png"></div></div><br>
+
+            <div class="box invisible" id="Dodgecoin">
+                <div class="two"> <img src="../images/74.png"></div>
+                <div class="one">Dogecoin (['doʊʒkɔɪn], code : DOGE, symbole : Ð et D) est une crypto-monnaie avec une image du Shiba Inu chien du mème « Doge » comme logo. Présenté comme une blague le 6 décembre 2013, le Dogecoin a rapidement développé sa propre communauté en ligne et a atteint une capitalisation de 60 millions de dollars en janvier 2014.
+
+                  Par rapport aux autres monnaies cryptographiques, le Dogecoin disposait d'un calendrier de production initial rapide : 100 milliards de pièces étaient en circulation à la mi-2015, avec 5,25 milliards de pièces supplémentaires chaque année par la suite. À partir du 30 juin 2015, le 100 milliardième Dogecoin avait été miné. Bien qu’il existe peu d’applications commerciales grand public, la devise a gagné en popularité. Le Dogecoin est une cryptomonnaie de type altcoin.
+                  Le Dogecoin a été créé par le programmeur Billy Markus de Portland, qui espérait créer une crypto-monnaie amusante pouvant atteindre un plus grand nombre de personnes que le Bitcoin. En outre, il souhaitait se démarquer de l'histoire controversée des autres pièces. Parallèlement, Jackson Palmer, membre du département marketing d’Adobe à Sydney, a été encouragé sur Twitter par un étudiant de Front Range Community College à faire de cette idée une réalité.
+                  Après avoir reçu plusieurs mentions sur Twitter, Palmer a acheté le domaine dogecoin.com et a ajouté un écran d’accueil, comportant le logo de la pièce et du texte en Comic Sans. Markus a vu le site lié à un forum de discussion IRC et a entrepris de créer la devise après avoir contacté Palmer. Markus a basé le Dogecoin sur une crypto-monnaie existante, le Luckycoin  qui présente une récompense aléatoire reçue pour l’exploitation d’un bloc, cette particularité a ensuite été remplacée par une récompense de bloc statique en mars 2014. À son tour, le Luckycoin est basé sur le Litecoin9 qui utilise également la technologie scrypt dans son algorithme de preuve de travail. L'utilisation de scrypt signifie que les mineurs ne peuvent pas utiliser l'équipement de minage SHA-256 comme pour le bitcoin et que la création de FPGA et de circuits ASIC dédiés à l'exploitation minière est compliquée. Le Dogecoin a été officiellement lancé le 6 décembre 2013 . Le réseau devait à l’origine produire 100 milliards de Dogecoins, mais il a ensuite été annoncé qu'il produirait une infinité de Dogecoins. </div>
+              </div><br>
+
+        </div>
+        <footer id="pied">
+            <img src="../images/footer.png" class="back_footer">
+                <div class="reseaux">
+                    <img src="../images/twitter.png" class="Resimg">
+                    <img src="../images/facebook.png" class="Resimg">
+                    <img src="../images/instagram.png" class="Resimg">
+                    <img src="../images/youtube.png" class="Resimg">
+                  </div>
+                  <div class="propos">
+                      <h4>Qui sommes-nous :</h4>
+                      <p>Site réalisé par Romain D'Hem, Vincent Dutournier et Aubin Rochefort, étudiants en première année du cycle informatique et réseaux (CIR) de l'ISEN Rennes </p>
+                  </div>
+                  <div class="contact">
+                    <h4>Nous contacter :</h4>
+                    <form action="mailto:meteo.crypto@gmail.com" method="POST" id="formulaire">
+                      <div class="np">
+                        <input type="text" placeholder="Prénom" id="prenom">
+                        <input type="text" placeholder="Nom" id="nom">
+                      </div>
+                        <input type="email" placeholder="Adresse mail" id="mail">
+                        <br/>
+                        <textarea rows="5" cols="50" placeholder="Message" id="message"></textarea>
+                        <input type="button" id="contact_bt" value="Envoyer" onclick="valider()">
+                    </form>
+                  </div>
+        </footer>
+
+        <div id="haut" class="colle ">
+          <a href="#nav"><canvas id="canva" height="50px" width="50px">Votre navigateur ne supporte pas les canvas</canvas></a>
+      </div>
+
+</body>
+</html>

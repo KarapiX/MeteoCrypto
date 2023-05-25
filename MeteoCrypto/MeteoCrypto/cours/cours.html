@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Météo de la crypto</title>
+  <link href="cours.css" rel="stylesheet" type="text/css"/>
+  <script src="cours.js"></script>
+</head>
+<body onload="dessiner(), apparait()" onscroll="haut(), apparait()">
+    <nav id="nav">
+        <img src="../images/Menu.png" alt="Menu" id="imgmenu"  onclick="onav();">
+        <a href="../accueil/accueil.html" id="title">Météo de la crypto</a>
+        <div id="fond"></div>
+        <div id="nav-content">
+          <a href="../articles/articles.html" class="navlink">Articles</a>
+          <a href="../formation/formation.html" class="navlink">Formation</a>
+          <a href="../cours/cours.html" class="navlink">Cours des monnaies</a>
+          <a href="../acheter/acheter.html" class="navlink">Acheter</a>
+        </div>
+        <div id="navResp">
+          <img src="../images/close.png" alt="Fermer le menu" id="Cmenu" onclick="Cnav();">
+          <a href="../articles/articles.html" class="navlinkR">Articles</a>
+          <a href="../formation/formation.html" class="navlinkR">Formation</a>
+          <a href="../cours/cours.html" class="navlinkR">Cours des monnaies</a>
+          <a href="../acheter/acheter.html" class="navlinkR">Acheter</a>
+        </div>
+      </nav>
+  
+  <!-- Content---------------------------------->
+      
+  
+    
+    <h2>Cours de la crypto-monnaie</h2>
+    </br>
+    </br>
+    <div id="cours">
+        <div id="test"><div id="essai"></div></div>
+        <div id="gauche">
+            <div class="invisible" id="BTC" onclick="test(this.id)">
+                <h3>Bitcoin</h2>
+                <img src="../images/bitcoin.png">
+            </div>
+    
+            <div class="invisible" id="BNB" onclick="test(this.id)">
+                <h3>Binance coin</h3>
+                <img src="../images/binance.png">
+            </div>
+
+            <div class="invisible" id="USDT" onclick="test(this.id)">
+                <h3>Tether</h3>
+                <img src="../images/theter.png">
+            </div>
+
+            <div class="invisible" id="HEX" onclick="test(this.id)">
+                <h3>HEX</h3>
+                <img src="../images/hex.png">
+            </div>
+        </div>
+
+        <div id="droite">
+            <div class="invisible" id="D" onclick="test(this.id)">
+                <h3>Dogecoin</h3>
+                <img src="../images/dogecoin.png">
+            </div>
+
+            <div class="invisible" id="USDC" onclick="test(this.id)">
+                <h3>USD coin</h3>
+                <img src="../images/usdc.png">
+            </div>
+
+            <div class="invisible" id="ETH" onclick="test(this.id)">
+                <h3>Ethereum</h3>
+                <img src="../images/ethereum.png">
+            </div>
+
+            <div class="invisible" id="ADA" onclick="test(this.id)">
+                <h3>Cardano</h3>
+                <img src="../images/cardano.png">
+            </div>
+        </div>
+    </div>
+
+    <footer id="pied">
+        <img src="../images/footer.png" class="back_footer">
+            <div class="reseaux">
+                <img src="../images/twitter.png" class="Resimg">
+                <img src="../images/facebook.png" class="Resimg">
+                <img src="../images/instagram.png" class="Resimg">
+                <img src="../images/youtube.png" class="Resimg">
+              </div>
+              <div class="propos">
+                  <h4>Qui sommes-nous :</h4>
+                  <p>Site réalisé par Romain D'Hem, Vincent Dutournier et Aubin Rochefort, étudiants en première année du cycle informatique et réseaux (CIR) de l'ISEN Rennes </p>
+              </div>
+              <div class="contact">
+                <h4>Nous contacter :</h4>
+                <form action="mailto:meteo.crypto@gmail.com" method="POST" id="formulaire">
+                  <div class="np">
+                    <input type="text" placeholder="Prénom" id="prenom">
+                    <input type="text" placeholder="Nom" id="nom">
+                  </div>
+                    <input type="email" placeholder="Adresse mail" id="mail">
+                    <br/>
+                    <textarea rows="5" cols="50" placeholder="Message" id="message"></textarea>
+                    <input type="button" id="contact_bt" value="Envoyer" onclick="valider()">
+                </form>
+              </div>
+    </footer>
+    <div id="haut" class="colle ">
+        <a href="#nav"><canvas id="canva" height="50px" width="50px">Votre navigateur ne supporte pas les canvas</canvas></a>
+    </div>
+
+    
+</body>
+</html>

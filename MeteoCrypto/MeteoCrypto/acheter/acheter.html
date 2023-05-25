@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Météo de la crypto</title>
+  <link href="acheter.css" rel="stylesheet" type="text/css"/>
+  <script src="acheter.js"></script>
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/Bitcoin.svg">
+</head>
+<body onload="dessiner(), haut()" onscroll="haut()">
+    <nav id="nav">
+        <img src="../images/Menu.png" alt="Menu" id="imgmenu"  onclick="onav();">
+        <a href="../accueil/accueil.html" id="title">Météo de la crypto</a>
+        <div id="fond"></div>
+        <div id="nav-content">
+          <a href="../articles/articles.html" class="navlink">Articles</a>
+          <a href="../formation/formation.html" class="navlink">Formation</a>
+          <a href="../cours/cours.html" class="navlink">Cours des monnaies</a>
+          <a href="../acheter/acheter.html" class="navlink">Acheter</a>
+        </div>
+        <div id="navResp">
+          <img src="../images/close.png" alt="Fermer le menu" id="Cmenu" onclick="Cnav();">
+          <a href="../articles/articles.html" class="navlinkR">Articles</a>
+          <a href="../formation/formation.html" class="navlinkR">Formation</a>
+          <a href="../cours/cours.html" class="navlinkR">Cours des monnaies</a>
+          <a href="../acheter/acheter.html" class="navlinkR">Acheter</a>
+        </div>
+      </nav>
+
+    
+
+    <img src="" alt="Logo crypto" id="image_crypto" class="box">
+
+    <div id="tableau">
+        <div id="convertir">
+            <h4>Convertir des euros en crypto-monnaies</h4>
+            <form id="formulaire_convertir" method="POST">
+                <select id="monnaie_convertir" onchange="apparait(this.value)">
+                    <option value="">Monnaie</option>
+                    <option value="BTC">Bitcoin</option>
+                    <option value="ETH">Ethereum</option>
+                    <option value="D">Dogecoin</option>
+                    <option value="USDT">Tether</option>
+                    <option value="BNB">Binancecoin</option>
+                    <option value="HEX">HEX</option>
+                    <option value="USDC">USDcoin</option>
+                    <option value="ADA">Cardano</option>
+                </select>
+
+                <input type="number" id="prix" placeholder="Valeur">
+                <input type="button" value="Convertir" onclick="verif_convertir()">
+            </form>
+
+            <div id="conversion">
+                <p>Récapitulatif des conversions : </p>
+                <p id="bitcoin_conversion"></p>
+                <p id="ether_conversion"></p>
+                <p id="doge_conversion"></p>
+                <p id="tether_conversion"></p>
+                <p id="bnb_conversion"></p>
+                <p id="hex_conversion"></p>
+                <p id="usdc_conversion"></p>
+                <p id="ada_conversion"></p>
+            </div>
+        </div>
+
+       
+
+        <div id="acheter">
+            <h4>Acheter des crypto-monnaies</h4>
+            <form id="formulaire_acheter" method="POST">
+                <select id="monnaie" onchange="apparait(this.value)">
+                    <option value="">Monnaie</option>
+                    <option value="BTC">Bitcoin</option>
+                    <option value="ETH">Ethereum</option>
+                    <option value="D">Dogecoin</option>
+                    <option value="USDT">Tether</option>
+                    <option value="BNB">Binancecoin</option>
+                    <option value="HEX">HEX</option>
+                    <option value="USDC">USDcoin</option>
+                    <option value="ADA">Cardano</option>
+                </select>
+                    
+                <input type="number" id="quantite" placeholder="Quantite">
+                <input type="button" value="Ajouter au panier" onclick="ajouter()">
+            </form>
+
+            <div id="panier">
+                <p>Récapitulatif du panier : </p>
+                <p id="bitcoin"></p>
+                <p id="ethereum"></p>
+                <p id="doge"></p>
+                <p id="tether"></p>
+                <p id="bnb"></p>
+                <p id="hex"></p>
+                <p id="usdc"></p>
+                <p id="ada"></p>
+                <p id="total"></p>
+                <form>
+                    <input type="button" value="Confirmer" onclick="acheter()">
+                </form>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+
+    <h1 id="merci"></h1>
+
+    
+
+
+    <footer id="pied">
+        <img src="../images/footer.png" class="back_footer">
+            <div class="reseaux">
+                <img src="../images/twitter.png" class="Resimg">
+                <img src="../images/facebook.png" class="Resimg">
+                <img src="../images/instagram.png" class="Resimg">
+                <img src="../images/youtube.png" class="Resimg">
+              </div>
+              <div class="propos">
+                  <h4>Qui sommes-nous :</h4>
+                  <p>Site réalisé par Romain D'Hem, Vincent Dutournier et Aubin Rochefort, étudiants en première année du cycle informatique et réseaux (CIR) de l'ISEN Rennes </p>
+              </div>
+              <div class="contact">
+                <h4>Nous contacter :</h4>
+                <form action="mailto:meteo.crypto@gmail.com" method="POST" id="formulaire">
+                  <div class="np">
+                    <input type="text" placeholder="Prénom" id="prenom">
+                    <input type="text" placeholder="Nom" id="nom">
+                  </div>
+                    <input type="email" placeholder="Adresse mail" id="mail">
+                    <br/>
+                    <textarea rows="5" cols="50" placeholder="Message" id="message"></textarea>
+                    <input type="button" id="contact_bt" value="Envoyer" onclick="valider()">
+                </form>
+              </div>
+    </footer>
+
+    <div id="haut" class="colle ">
+        <a href="#nav"><canvas id="canva" height="50px" width="50px">Votre navigateur ne supporte pas les canvas</canvas></a>
+    </div>
+
+</body>
+</html>

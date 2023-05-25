@@ -1,0 +1,315 @@
+html{
+  scroll-behavior: smooth;
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family:sans-serif;
+}
+/*---------------------------------Menu---------------------------------------------*/
+nav{
+  justify-content: space-between;
+  background-color : white;
+  display: flex;
+  flex-direction:row;
+  height: 75px;
+}
+#imgmenu{
+  display: none;
+}
+#cmenu{
+  display:none;
+}
+#nav-content{/*(div contenant les liens)*/
+  position : relative;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  width:35%;
+  margin-right: 2%;
+}
+#navResp{
+  display: none;
+}
+#title{/*(météo de la crypto)*/
+  margin: auto 0 auto 5%;
+  user-select: none;
+  text-decoration: none;
+  color:black;
+  font-size: 22px;
+}
+.navlink{/*(les liens)*/
+  margin: auto;
+  border-bottom: 2px solid transparent;
+  user-select: none;
+  text-decoration : none;
+  color:black;
+}
+.navlink:hover{
+  border-bottom: 2px solid black;
+  transition: 1s;
+}
+/*----------------------------- Nav pour téléphone------------------------------*/
+@media screen and (max-width: 1200px) {
+  nav{
+    height: 60px;
+    box-shadow: 0 8px 6px -6px #999;
+  }
+  #fond{
+    position:absolute;
+    background-color : #333;
+    height: 100%;
+    width:0;
+    z-index: 100;
+    transition: 0.3s;
+  }
+  #nav-content{
+    display:none;
+  }
+  #navResp{
+    display: none;
+    position: absolute;
+    width: 0;
+    transition: 0.3s;
+    height: 100%;
+    z-index: 101;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navlinkR{
+    color: white;
+    font-size: 18px;
+    margin: 10% auto 0 auto;
+  }
+  #Cmenu{
+    width:35px;
+    height: 35px;
+    position:absolute;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+  }
+  #title{
+    margin: auto;
+    font-size: 20px;
+  }
+  #imgmenu{
+    width: 30px;
+    height: 30px;
+    display:block;
+    cursor: pointer;
+    margin: auto 0 auto 5%;
+  }
+}
+/*----------------------------------Content------------------------------------------------------------*/
+h1{
+    font-size: 30px;
+}
+.box {
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    border-radius:10%;
+    height:400px;
+}
+.one {
+  position:relative;
+  display: flex;
+  width: 65%;
+  margin: auto;
+}
+.two {
+  position: relative;
+  display: flex;
+  width:300px;
+  height:300px;
+  margin: auto;
+}
+img{
+    width: 250px;
+    height: 250px;
+    margin: auto;
+}
+.one:nth-of-type(2n){
+    text-align:right;
+}
+#BNB{
+    background-color: rgb(255, 255, 111);
+}
+#bitcoin{
+  background-color: rgb(255, 190, 70);
+}
+#USD{
+  background-color: rgb(198, 229, 255);
+}
+#Hex{
+  background-color: pink;
+}
+#Tether{
+  background-color: rgb(199, 255, 115);
+}
+#Ethereum{
+  background-color: rgb(199, 193, 193);
+}
+#Dodgecoin{
+  background-color: rgb(205, 119, 119);
+}
+#Cardano{
+  background-color: rgb(176, 176, 255);
+}
+
+@media screen and (max-width: 1200px) {
+  .two {
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+  }
+  .box{
+    display: flex;
+    flex-direction:column-reverse;
+    height:50%;
+    border-radius: 0;
+    padding: 50px 0;
+  }
+}
+/*------------------------------------------Footer------------------------------------------*/
+footer{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height:280px;
+  color: white;
+  margin: 0;
+}
+.back_footer{
+  width: 100%;
+  height: 260px;
+  position: absolute;
+  bottom: 0;left: 0;right: 0;
+}
+.reseaux{
+  width: 50px;
+  height:185px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 3% 0 auto 2%;
+}
+.Resimg{
+  margin:auto;
+  width: 40px;
+  height: 40px;
+}
+.propos{
+  width:45%;
+  height: 100px;
+  margin: auto;
+  z-index: 10;
+}
+.contact{
+  margin: auto;
+  width: 25%;
+  height: 100%;
+}
+#formulaire{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.np{
+  width:100%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+#nom,#prenom{
+  width:40%;
+  height:25px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background: none;
+  color: white;
+}
+#mail,#message{
+  width:90%;
+  margin:10px auto 0 auto;
+  border: 2px solid white;
+  border-radius: 5px;
+  background: none;
+  color: white;
+}
+#mail{
+  height: 25px;
+}
+#contact_bt{
+  width:30%;
+  height:25px;
+  background: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin: 10px 5% auto auto;
+  cursor: pointer;
+}
+@media  screen and (max-width: 850px) {
+  footer{
+    flex-direction: column;
+    height: 550px;
+  }
+
+  .reseaux{
+    flex-direction:row;
+    justify-content: space-around;
+    margin: auto;
+    width: 185px;
+    height: 50px;
+  }
+  .propos{
+    width: 80%;
+    margin: auto;
+    height: 150px;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .contact{
+    width: 80%;
+    height:250px;
+    z-index:50;
+    font-size: 15px;
+    font-weight:bold;
+  }
+  .back_footer{
+    height: 600px;
+  }
+}
+
+.invisible{
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.apparait{
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.colle{
+  position: fixed;
+  bottom: 2%;
+  right: 1%;
+  opacity: 1;
+  transition: 0.1s;
+}
+.decolle{
+  position: fixed;
+  bottom: 35%;
+  right: 1%;
+  opacity: 1;
+  transition: 0.3s;
+}

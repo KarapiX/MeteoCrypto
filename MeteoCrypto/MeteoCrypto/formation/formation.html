@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Météo de la crypto</title>
+  <link href="formation.css" rel="stylesheet" type="text/css"/>
+  <script src="formation.js"></script>
+</head>
+<body>
+ <div id="image">
+   <nav id="nav">
+           <img src="../images/Menu.png" alt="Menu" id="imgmenu"  onclick="onav();">
+           <a href="../accueil/accueil.html" id="title">Météo de la crypto</a>
+           <div id="fond"></div>
+           <div id="nav-content">
+             <a href="../articles/articles.html" class="navlink">Articles</a>
+             <a href="../formation/formation.html" class="navlink">Formation</a>
+             <a href="../cours/cours.html" class="navlink">Cours des monnaies</a>
+             <a href="../acheter/acheter.html" class="navlink">Acheter</a>
+           </div>
+           <div id="navResp">
+             <img src="../images/close.png" alt="Fermer le menu" id="Cmenu" onclick="Cnav();">
+             <a href="../articles/articles.html" class="navlinkR">Articles</a>
+             <a href="../formation/formation.html" class="navlinkR">Formation</a>
+             <a href="../cours/cours.html" class="navlinkR">Cours des monnaies</a>
+             <a href="../acheter/acheter.html" class="navlinkR">Acheter</a>
+           </div>
+  </nav>
+      <h1 id="miseenblanc">Les Formations</h1>
+
+
+      <!--Content Formation-->
+        <div id="formations">
+            <div class="boxfor">
+                <div class="one">
+                   <h2 class="title">Les Bases </h2>
+                    <h1>4,99$/Mois</h1>
+                    <ul>
+                        <li>Pas cher</li>
+                        <li>Permet d'apprendre comment investir la crypto</li>
+                        <li>Petite aide tous les jours</li>
+                    </ul>
+                <br><br>
+                <input type="submit" id="formation1" value="Acheter" onclick="formation()"><br><br><br>
+                </div>
+
+
+              <div class="two">
+                <h2 class="title">Avancé</h2>
+                <h1 class="prix">18,99$/Mois</h1>
+                <ul>
+                    <li>Pour personne agérie</li>
+                    <li>Apprend à anticiper les fluctuations</li>
+                    <li>un conseils d'expert par semaine</li>
+                </ul>
+                <br><br>
+                <input type="submit" id="formation2" value="Acheter" onclick="formation()"><br><br><br>
+                </div>
+
+             <div class="three">
+               <h2 class="title">Formation</h2>
+                <h1>34,99$/Mois</h1><p></p>
+                <ul>
+                    <li>Formation complète supervisé par nos experts</li>
+                    <li>Permet de rivaliser les tradeurs</li>
+                    <li>Possibilité d'appelé votre <span id="pagecache">expert</span> pour des conseils</li>
+                </ul>
+                <br><br>
+                <input type="submit" id="formation3" value="Acheter" onclick="formation()"><br><br><br>
+
+            </div>
+        </div>
+
+</div>
+    <footer >
+        <img src="../images/footer.png" class="back_footer">
+            <div class="reseaux">
+                <img src="../images/twitter.png" class="Resimg">
+                <img src="../images/facebook.png" class="Resimg">
+                <img src="../images/instagram.png" class="Resimg">
+                <img src="../images/youtube.png" class="Resimg">
+              </div>
+              <div class="propos">
+                  <h4>Qui sommes-nous :</h4>
+                  <p>Site réalisé par Romain D'Hem, Vincent Dutournier et Aubin Rochefort, étudiants en première année du cycle informatique et réseaux (CIR) de l'ISEN Rennes </p>
+              </div>
+              <div class="contact">
+                <h4>Nous contacter :</h4>
+                <form  method="POST" id="formulaire">
+                  <div class="np">
+                    <input type="text" placeholder="Prénom" id="prenom">
+                    <input type="text" placeholder="Nom" id="nom">
+                    </div>
+                    <input type="email" placeholder="Adresse mail" id="mail">
+                    <br/>
+                    <textarea rows="5" cols="50" placeholder="Message" id="message"></textarea>
+                    <input type="button" id="contact_bt" value="Envoyer" onclick="valider()">
+                </form>
+              </div>
+    </footer>
+</body>
+</html>

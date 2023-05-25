@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Météo de la crypto</title>
+    <link rel="stylesheet" href="doc.css">
+    <script type="text/javascript" src="doc.js"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/Bitcoin.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body onload="dessiner(), haut()" onscroll="haut()">
+    <nav id="nav">
+      <img src="../images/Menu.png" alt="Menu" id="imgmenu"  onclick="onav();">
+      <a href="../accueil/accueil.html" id="title">Météo de la crypto</a>
+      <div id="fond"></div>
+      <div id="navContent">
+        <a href="../articles/articles.html" class="navlink">Articles</a>
+        <a href="../formation/formation.html" class="navlink">Formation</a>
+        <a href="../cours/cours.html" class="navlink">Cours des monnaies</a>
+        <a href="../acheter/acheter.html" class="navlink">Acheter</a>
+      </div>
+      <div id="navResp">
+        <img src="../images/close.png" alt="Fermer le menu" id="Cmenu" onclick="Cnav();">
+        <a href="../articles/articles.html" class="navlinkR">Articles</a>
+        <a href="../formation/formation.html" class="navlinkR">Formation</a>
+        <a href="../cours/cours.html" class="navlinkR">Cours des monnaies</a>
+        <a href="../acheter/acheter.html" class="navlinkR">Acheter</a>
+      </div>
+    </nav>
+
+<!-- Content---------------------------------->
+    <img src="../images/test.png" class="img">
+    <h3 class="tp1">Les bonnes affaires :</h3>
+    <div class="prop">
+      <div class="content n1">
+        <div class="etiquette" id="bitcoin" onclick="redirection(this.id)">
+          <img src="../images/bitcoin.svg" class="img-crypto">
+          <p class="text-crypto">Bitcoin</p>
+        </div>
+        <div class="etiquette" id="Hex" onclick="redirection(this.id)">
+          <img src="../images/HEX.svg" class="img-crypto">
+          <p class="text-crypto">HEX</p>
+        </div>
+        <div class="etiquette" id="USD" onclick="redirection(this.id)">
+          <img src="../images/USD_Coin.svg" class="img-crypto">
+          <p class="text-crypto">USD Coin</p>
+        </div>
+        <div class="etiquette" id="Dodgecoin" onclick="redirection(this.id)">
+          <img src="../images/dogecoin.svg" class="img-crypto">
+          <p class="text-crypto">Doge coin</p>
+        </div>
+      </div>
+      <div class="content n2">
+          <div class="etiquette" id="Ethereum" onclick="redirection(this.id)">
+            <img src="../images/Ethereum.svg" alt="" class="img-crypto">
+            <p class="text-crypto" class="img-crypto">Ethereum</p>
+          </div>
+          <div class="etiquette" id="Tether" onclick="redirection(this.id)">
+            <img src="../images/Tether.svg"  class="img-crypto">
+            <p class="text-crypto">Tether</p>
+          </div>
+          <div class="etiquette" id="BNB" onclick="redirection(this.id)">
+            <img src="../images/Binance.svg"  class="img-crypto">
+            <p class="text-crypto">Binance Coin</p>
+          </div>
+          <div class="etiquette" id="Cardano" onclick="redirection(this.id)">
+            <img src="../images/Cardano.svg" class="img-crypto" >
+            <p class="text-crypto">Cardano</p>
+          </div>
+        </div>
+    </div>
+
+
+    <div class="contenu">
+      <div class="def">
+        <h3 class="grandTitle">Qu’est-ce qu’une cryptomonnaie ?</h3>
+        <p>Les « cryptomonnaies », plutôt appelés « crypto-actifs », sont des actifs numériques virtuels qui reposent sur la technologie de la blockchain (chaine de bloc) à travers un registre décentralisé et un protocole informatique crypté. Un crypto-actif n’est pas une monnaie. Sa valeur se détermine uniquement en fonction de l’offre et de la demande.
+          <br><br>Les crypto-actifs ne reposent pas sur un tiers de confiance, comme une banque centrale pour une monnaie. Il existe à ce jour plus de 1 300 crypto-actifs. Les plus connus sont le bitcoin, le ripple, l’ether, le litecoin, le nem et le dash.</p>
+      </div>
+      <div class="def">
+        <h3 class="grandTitle">Que peut-on acheter avec des cryptomonnaies ?</h3>
+        <p>Lorsqu'il a été lancé, Bitcoin était censé être un moyen de transaction quotidien, permettant d'acheter tout, allant d'une tasse de café à un ordinateur, voire des biens de grande valeur, comme des biens immobiliers. Cela ne s'est pas encore concrétisé et, bien que le nombre d'institutions acceptant les cryptomonnaies soit en augmentation, les transactions importantes les impliquant sont rares. Malgré cela, il est possible d'acheter une grande variété de produits sur des sites Web de commerce en ligne en utilisant des cryptomonnaies. <br>Voici quelques exemples : <br>
+        <h4 class="defTitle">Technologie et sites de commerce en ligne :<br></h4>
+        Plusieurs entreprises qui vendent des produits technologiques acceptent les cryptomonnaies sur leurs sites Web, comme newegg.com, AT&T et Microsoft. Overstock, une plateforme de commerce en ligne, a été parmi les premiers sites à accepter Bitcoin. Shopify, Rakuten et Home Depot l'acceptent également.<br>
+        <h4 class="defTitle">Produits de luxe :<br></h4>
+        Certaines enseignes de luxe acceptent les cryptomonnaies comme mode de paiement. Par exemple, le détaillant de luxe en ligne Bitdials permet d'utiliser Bitcoin pour acheter des montres Rolex, Patek Philippe ainsi que d'autres montres haut de gamme.
+        <br><h4 class="defTitle">Voitures :<br></h4>
+        Certains concessionnaires automobiles – allant des marques de grande consommation aux concessionnaires de luxe haut de gamme – acceptent déjà les cryptomonnaies comme mode de paiement.
+        <br><h4 class="defTitle">Assurance :<br></h4>
+        En avril 2021, l'assureur suisse AXA a annoncé qu'il avait commencé à accepter Bitcoin comme mode de paiement pour toutes ses branches d'assurance, à l'exception de l'assurance-vie (en raison de problèmes réglementaires). Premier Shield Insurance, qui vend des stratégies d'assurance habitation et automobile aux États-Unis, accepte également Bitcoin pour le paiement des primes.
+        <br>Si vous souhaitez dépenser des cryptomonnaies chez un détaillant qui ne les accepte pas directement, vous pouvez utiliser une carte de débit de cryptomonnaies, comme BitPay aux États-Unis.</p>
+      </div>
+      <div class="def">
+        <h3 class="grandTitle">Sont-elles légales et sûres ?</h3>
+        <p>Contrairement à la monnaie électronique, les monnaies virtuelles ou crypto-monnaies n’ont pas à ce jour de statut légal explicite et leur encadrement par les pouvoirs publics reste embryonnaire.<br><br>
+          En droit français, les crypto-monnaies n’ont pas de statut juridique clair et ne sont pas reconnues comme des instruments financiers. De ce fait, les crypto-monnaies ne sont pour l'heure pas réglementées.<br><br>
+          À ce sujet, l'Autorité des marchés financiers (AMF) indique que « l’investissement en crypto-actifs est risqué et de nombreux escrocs opèrent sur internet ».<br><br>
+          Si vous souhaitez investir dans les crypto-actifs, sachez que l'AMF recense les sites d'arnaques liés aux crypto-actifs au sein de la liste noire de l’Autorité des Marchés Financiers. Pensez à la consulter.</p>
+      </div>
+
+    </div>
+    
+
+    <footer id="pied">
+        <img src="../images/footer.png" class="back_footer">
+            <div class="reseaux">
+                <img src="../images/twitter.png" class="Resimg">
+                <img src="../images/facebook.png" class="Resimg">
+                <img src="../images/instagram.png" class="Resimg">
+                <img src="../images/youtube.png" class="Resimg">
+              </div>
+              <div class="propos">
+                  <h4>Qui sommes-nous :</h4>
+                  <p>Site réalisé par Romain D'Hem, Vincent Dutournier et Aubin Rochefort, étudiants en première année du cycle informatique et réseaux (CIR) de l'ISEN Rennes </p>
+              </div>
+              <div class="contact">
+                <h4>Nous contacter :</h4>
+                <form action="mailto:meteo.crypto@gmail.com" method="POST" id="formulaire">
+                  <div class="np">
+                    <input type="text" placeholder="Prénom" id="prenom">
+                    <input type="text" placeholder="Nom" id="nom">
+                  </div>
+                    <input type="email" placeholder="Adresse mail" id="mail">
+                    <br/>
+                    <textarea rows="5" cols="50" placeholder="Message" id="message"></textarea>
+                    <input type="button" id="contact_bt" value="Envoyer" onclick="valider()">
+                </form>
+              </div>
+    </footer>
+
+
+    <div id="haut" class="colle">
+      <a href="#nav"><canvas id="canva" height="50px" width="50px">Votre navigateur ne supporte pas les canvas</canvas></a>
+  </div>
+
+</html>

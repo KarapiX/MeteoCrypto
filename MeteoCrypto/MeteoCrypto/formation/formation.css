@@ -1,0 +1,312 @@
+html,body{
+  margin: 0;
+  padding: 0;
+  font-family:sans-serif;
+  height:100%;
+}
+/*---------------------------------Menu---------------------------------------------*/
+nav{
+  justify-content: space-between;
+  background-color : white;
+  display: flex;
+  flex-direction:row;
+  height: 75px;
+}
+#imgmenu{
+  display: none;
+}
+#cmenu{
+  display:none;
+}
+#nav-content{/*(div contenant les liens)*/
+  position : relative;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  width:35%;
+  margin-right: 2%;
+}
+#navResp{
+  display: none;
+}
+#title{/*(météo de la crypto)*/
+  margin: auto 0 auto 5%;
+  user-select: none;
+  text-decoration: none;
+  color:black;
+  font-size: 22px;
+}
+.navlink{/*(les liens)*/
+  margin: auto;
+  border-bottom: 2px solid transparent;
+  user-select: none;
+  text-decoration : none;
+  color:black;
+}
+.navlink:hover{
+  border-bottom: 2px solid black;
+  transition: 1s;
+}
+/*----------------------------- Nav pour téléphone------------------------------*/
+@media screen and (max-width: 1200px) {
+  nav{
+    height: 60px;
+  }
+  #fond{
+    position:absolute;
+    background-color : #333;
+    height: 100%;
+    width:0;
+    z-index: 100;
+    transition: 0.3s;
+  }
+  #nav-content{
+    display:none;
+  }
+  #navResp{
+    display: none;
+    position: absolute;
+    width: 0;
+    transition: 0.3s;
+    height: 100%;
+    z-index: 101;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navlinkR{
+    color: white;
+    font-size: 18px;
+    margin: 10% auto 0 auto;
+  }
+  #Cmenu{
+    width:35px;
+    height: 35px;
+    position:absolute;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+
+  }
+  #title{
+    margin: auto;
+    font-size: 20px;
+
+  }
+
+  #imgmenu{
+    width: 30px;
+    height: 30px;
+    display:block;
+    cursor: pointer;
+    margin: auto 0 auto 5%;
+
+  }
+}
+/*-----------------content-------------------------*/
+#formations{
+  margin: auto;
+  height: 100%;
+}
+h1{
+    font-size: 30px;
+}
+#image{
+  background-image:url("../images/matrix.jpg");
+}
+#miseenblanc{
+  color:white;
+  margin: 20px 0 0 20px;
+}
+.boxfor {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 50px auto;
+}
+
+.one {
+  text-align: center;
+  background-color: rgb(255, 128, 128);
+  border-color: red;
+  border-style: solid;
+  width: 25%;
+  height: 400px;
+  margin: auto 0;
+}
+
+.two {
+  text-align: center;
+  background-color: rgb(157, 255, 157);
+  width: 25%;
+  height: 400px;
+  border-color: green;
+  border-style: solid;
+  margin: auto 0;
+}
+
+.three {
+  text-align: center;
+  background-color:rgb(165, 165, 255);
+  border-color: blue;
+  border-style: solid;
+  width: 25%;
+  height: 400px;
+  margin: auto 0;
+}
+.title{
+  margin: 50px auto;
+}
+@media screen and (max-width: 800px) {
+  .boxfor {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .one, .two, .three{
+    width: 70%;
+    margin: 10px auto;
+  }
+}
+
+ul{
+  text-align: left;
+  margin: 10% auto;
+}
+
+#formation1,#formation2,#formation3{
+  margin: 2% auto;
+  width: 80%;
+  height: 30px;
+  border: 2px solid black;
+  cursor: pointer;
+  background-color: transparent;
+}
+/*
+#formation1{
+  background-color: rgb(255, 128, 128);
+}
+
+#formation2{
+  background-color: rgb(157, 255, 157);
+}
+
+#formation3{
+  background-color:rgb(165, 165, 255);
+}
+*/
+/*-----------------------------footer-------------------------------*/
+footer{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height:280px;
+  color: white;
+  margin: 0;
+}
+.back_footer{
+  width: 100%;
+  height: 280px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.reseaux{
+  width: 50px;
+  height:185px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 3% 0 auto 2%;
+}
+.Resimg{
+  margin:auto;
+  width: 40px;
+  height: 40px;
+}
+.propos{
+  width:45%;
+  height: 100px;
+  margin: auto;
+  z-index: 10;
+}
+.contact{
+  margin: auto;
+  width: 25%;
+  height: 100%;
+}
+#formulaire{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.np{
+  width:100%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+#nom,#prenom{
+  width:40%;
+  height:25px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background: none;
+  color: white;
+}
+#mail,#message{
+  width:90%;
+  margin:10px auto 0 auto;
+  border: 2px solid white;
+  border-radius: 5px;
+  background: none;
+  color: white;
+}
+#mail{
+  height: 25px;
+}
+#contact_bt{
+  width:30%;
+  height:25px;
+  background: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin: 10px 5% auto auto;
+  cursor: pointer;
+}
+@media  screen and (max-width: 850px) {
+  footer{
+    flex-direction: column;
+    height: 550px;
+  }
+
+  .reseaux{
+    flex-direction:row;
+    justify-content: space-around;
+    margin: auto;
+    width: 185px;
+    height: 50px;
+  }
+  .propos{
+    width: 80%;
+    margin: auto;
+    height: 150px;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .contact{
+    width: 80%;
+    height:250px;
+    z-index:50;
+    font-size: 15px;
+    font-weight:bold;
+  }
+  .back_footer{
+    height: 600px;
+  }
+}
